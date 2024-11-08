@@ -1,0 +1,38 @@
+{
+  "name": "csv-builder",
+  "author": "Nick Pisacane <pisacanen@gmail.com>",
+  "version": "1.0.1",
+  "description": "Easily encode complex JSON objects to CSV with CsvBuilder's schema-like API",
+  "license": "MIT",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/nickpisacane/CsvBuilder"
+  },
+  "keywords": [
+    "csv",
+    "csv encoder",
+    "json to csv",
+    "object to csv",
+    "csv stream",
+    "csv exporter"
+  ],
+  "dependencies": {
+    "lodash": "^4.17.15"
+  },
+  "scripts": {
+    "lint": "standard",
+    "test": "npm run lint && mocha test/**/*.test.js",
+    "test:watch": "watch-run -i -p 'lib/**/*.js,test/**/*.js' npm run test"
+  },
+  "devDependencies": {
+    "chai": "^5.1.0",
+    "mocha": "^10.4.0",
+    "standard": "^17.1.0",
+    "watch-run": "^1.2.5"
+  },
+  "standard": {
+    "ignore": [
+      "test"
+    ]
+  }
+}
